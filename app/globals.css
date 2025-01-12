@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* general styling */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+[hidden] {
+  display: none !important;
+}
+
+::selection {
+  color: orange;
+}
+
+/* page setup */
+.center {
+  min-height: 100vh;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 1rem 1rem 1rem 1rem;
+}
+
+/* General image styles, excluding stars */
+img:not(.star-image) {
+  max-height: 20vh;
+  min-height: 20vh;
+  transition: 5s;
+}
+
+img.star-image {
+  width: 1rem; /* Adjust size for stars */
+  height: 1rem;
+  transition: none; /* Disable other effects for stars */
+}
+
+/* silly lil effects */
+img:not(.star-image):hover {
+  transform: rotate(360deg) skew(0deg, 0deg);
+  filter: drop-shadow(0px 0px 3px orange);
+}
+
+.title {
+  transition: 5s;
+}
+
+.title:hover {
+  transform: scale(3, 0.75);
+}
+
+.day {
+  transition: 3s;
+}
+
+.day:hover {
+  margin: 0.25rem;
+  transform: skew(0deg, -5deg);
+}
+
+summary {
+  transition: 5s;
+}
+
+summary:hover {
+  cursor: default;
+  transform: translateY(-0.25rem);
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+details {
+  transition: 3s;
+}
+
+details[open] {
+  margin: 0.25rem;
+}
+
+.day[open] {
+  margin: 1rem;
+}
+
+.day[open] .date:hover {
+  text-shadow: 0 0 2px orange;
+}
+
+/* archive styling */
+footer {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+footer a {
+  color: lightgrey;
+  text-decoration: none;
+}
+
+.year {
+  color: orange;
+  margin: 1rem 0 0.5rem 0;
+}
