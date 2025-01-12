@@ -34,10 +34,15 @@ export default function Home() {
           </summary>
           <p className="m-0 p-0">
             a log of all the bacon egg and cheese sandwiches{' '}
-            <a href="https://dylansteck.com" style={{ color: 'inherit', textDecoration: 'none' }}>
+            <a href="https://dylansteck.com" style={{ color: 'inherit', textDecoration: 'none' }} target="_blank">
               i
             </a>{' '}
             eat
+            <br/>
+            the design is heavily inspired by{' '}
+            <a href="https://consumed.today" style={{ color: 'inherit', textDecoration: 'none' }} target="_blank">
+              consumed.today
+            </a>
           </p>
         </details>
         <div className="mt-6 space-y-2">
