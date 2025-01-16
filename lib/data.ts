@@ -2,6 +2,18 @@ import { DayContent } from "./types";
 
 export const DAY_CONTENT: DayContent[] = [
     {
+      date: new Date('2025-01-14T00:00:00-05:00'),
+      sandwich: [
+        { id: "1", imageUrl: "/sandwiches/bec-daily-provisions-jan-14-25.png", description: "bacon egg and cheese on a roll from daily provisions" }
+      ],
+      rating: [
+        { rating: 4, description: "always very solid but it was slightly cold today" }
+      ],
+      location: [
+        { name: "daily provisions", url: "https://www.dailyprovisionsnyc.com" }
+      ]
+    },
+    {
       date: new Date('2025-01-11T00:00:00-05:00'),
       sandwich: [
         { id: "1", imageUrl: "/sandwiches/utopia-bec-jan-11-25.png", description: "bacon egg and cheese with a hash brown on an everything bagel" }
